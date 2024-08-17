@@ -1,0 +1,41 @@
+/* slider.css */
+.slider {
+    position: relative;
+    width: 100%; /* Adjust to fit the width of your container */
+    overflow: hidden;
+}
+
+.slider-items {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-item {
+    flex: 0 0 33.333%; /* Show 3 items at once */
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-button.prev {
+    left: 0;
+}
+
+.slider-button.next {
+    right: 0;
+}
